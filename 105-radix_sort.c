@@ -59,17 +59,17 @@ void radix_sort(int *array, size_t size)
 
 int getCantRep(int num)
 {
-	bool flag = true;
+	int flag = 1;
 	int cont = 0;
 
 	while (flag)
 	{
-		flag = false;
+		flag = 0;
 		if (num > 0)
 		{
 			num = num / 10;
 			cont++;
-			flag = true;
+			flag = 1;
 		}
 	}
 	return (cont);
