@@ -75,4 +75,11 @@ void radix_sort(int *array, size_t size);
 */
 
 int getCantRep(int num);
+/**
+ * swaps - swaps both
+ * @p: first node to swap
+ * @c: second node to swap
+ * @list: list to set null or not
+ */
+void swaps(listint_t *p, listint_t *c, listint_t **list);
 #endif

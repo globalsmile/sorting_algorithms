@@ -1,11 +1,11 @@
 #include "sort.h"
 /**
- * swap - swaps both
+ * swaps - swaps both
  * @p: first node to swap
  * @c: second node to swap
  * @list: list to set null or not
  */
-void swap(listint_t *p, listint_t *c, listint_t **list)
+void swaps(listint_t *p, listint_t *c, listint_t **list)
 {
 	if (!(p->prev))
 	{
@@ -49,7 +49,7 @@ void cocktail_sort_list(listint_t **list)
 			nextnode = c->next;
 			if (nextnode && c->n > nextnode->n)
 			{
-				swap(c, nextnode, list);
+				swaps(c, nextnode, list);
 				swapped = 1;
 				print_list((*list));
 			}
@@ -62,7 +62,7 @@ void cocktail_sort_list(listint_t **list)
 			nextnode = c->prev;
 			if (nextnode && c->n < nextnode->n)
 			{
-				swap(nextnode, c, list);
+				swaps(nextnode, c, list);
 				swapped = 1;
 				print_list((*list));
 			}
