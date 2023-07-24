@@ -58,4 +58,21 @@ void sink(int *A, int i, int N, size_t size);
  * @size: size of the array
  */
 void heap_sort(int *array, size_t size);
+/**
+ * radix_sort - sort array with radix method
+ * @array: array to sort
+ * @size: size of the array
+ *
+ * Return: nothing
+*/
+
+void radix_sort(int *array, size_t size);
+/**
+ * getCantRep - Returns the number of digits of the largest number in the array
+ * @num: The largest number
+ *
+ * Return: Number of digits of the num
+*/
+
+int getCantRep(int num);
 #endif
