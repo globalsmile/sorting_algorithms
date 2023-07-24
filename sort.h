@@ -29,4 +29,33 @@ void shell_sort(int *array, size_t size);
 void cocktail_sort_list(listint_t **list);
 void counting_sort(int *array, size_t size);
 void merge_sort(int *array, size_t size);
+/**
+ * swap - swap two vars in array
+ * @A: array
+ * @a: 1st num
+ * @b: 2nd num
+ * @size: size of array
+ */
+void swap(int *A, int a, int b, size_t size);
+/**
+ * swim - routine to build heap
+ * @A: int* array being sorted
+ * @i: index to swim
+ * @size: size of the array
+ */
+void swim(int *A, int i, size_t size);
+/**
+ * sink - routine to place items into place in heap
+ * @A: int *array being sorted
+ * @i: index to sink
+ * @N: size of array
+ * @size: size of the full array
+ */
+void sink(int *A, int i, int N, size_t size);
+/**
+ * heap_sort - heapsort with sinkdown method
+ * @array: int* array to sort
+ * @size: size of the array
+ */
+void heap_sort(int *array, size_t size);
 #endif
